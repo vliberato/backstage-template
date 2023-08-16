@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: teste-template
+  description: Template para documentação básica
+  tags: [docs, readme]
+  template:
+    type: url
+    value: https://github.com/vliberato/backstage-template.git
