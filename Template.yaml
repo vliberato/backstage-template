@@ -1,0 +1,33 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: Template de documentação
+  title: Doc Template
+  description: Template para criação de documentação.
+  
+spec:
+  owner: backstage/viqueetors
+  type: documentation
+  parameters:
+    - title: Insert name
+      required:
+        - name
+      properties:
+        name:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 1
+    - title: Insert description
+      required:
+        - name
+      properties:
+        name:
+          title: Description
+          type: string
+          description: Description of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 1
